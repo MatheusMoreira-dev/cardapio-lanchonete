@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="src/output.css" />
     <title>Cardápio</title>
   </head>
-  <body>
-    <header class="w-full h-[320px] bg-zinc-900">
-      <div class="w-full h-full flex flex-col justify-center items-center">
+  <body class="h-full">
+    <header class="w-full h-80 lg:sticky lg:top-0">
+      <div
+        class="w-full h-full flex flex-col justify-center items-center bg-banner"
+      >
         <img
-          src=""
+          src="./src/assets/hamb-1.png"
           alt="Sua logo"
-          class="w-32 h-32 mb-5 rounded-full border-2 border-green-700 text-white text-center"
+          class="w-32 h-32 mb-5 rounded-full border-4 hover:scale-3d border-green-700 text-white text-center"
         />
 
         <h1 class="text-2xl font-bold text-white">Nome do Restaurante</h1>
@@ -29,8 +31,92 @@
       </div>
     </header>
 
-    <main id="menu" class="grid grid-cols-4 mx-2 lg:mx-32">
-      <div class="bg-amber-200"></div>
+    <main
+      id="menu"
+      class="grid lg:grid-cols-3 md:grid-cols-2 mx-2 lg:mx-32 my-2 gap-4"
+    >
+      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+        <img
+          src=""
+          alt="imagem-item"
+          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+        />
+
+        <div class="flex flex-col">
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <span class="text-wrap">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="flex justify-between mt-3">
+            <p>R$ 12,00</p>
+            <i>Teste</i>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+        <img
+          src=""
+          alt="imagem-item"
+          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+        />
+
+        <div class="flex flex-col">
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <span class="text-wrap">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="flex justify-between mt-3">
+            <p>R$ 12,00</p>
+            <i>Teste</i>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+        <img
+          src=""
+          alt="imagem-item"
+          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+        />
+
+        <div class="flex flex-col">
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <span class="text-wrap">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="flex justify-between mt-3">
+            <p>R$ 12,00</p>
+            <i>Teste</i>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+        <img
+          src=""
+          alt="imagem-item"
+          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+        />
+
+        <div class="flex flex-col">
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <span class="text-wrap">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="flex justify-between mt-3">
+            <p>R$ 12,00</p>
+            <i>Teste</i>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <footer class="flex w-full h-20 bg-red-400 sticky bottom-0"></footer>
   </body>
 </html>

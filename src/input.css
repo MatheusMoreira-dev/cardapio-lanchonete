@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --img-banner: url("./assets/bg.png");
+}
+
+.bg-banner {
+  background-image: var(--img-banner);
+  background-size: cover;
+  background-position: center;
+}
