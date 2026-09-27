@@ -14,22 +14,25 @@
     />
   </head>
   <body class="min-h-screen flex flex-col">
-    <header class="w-full h-80">
+    <header class="top-0 sticky w-full h-24 lg:h-80">
       <div
-        class="w-full h-full flex flex-col justify-center items-center bg-banner"
+        class="w-full h-full flex justify-items-start lg:flex-col lg:justify-center items-center bg-banner px-4"
       >
         <img
           src="./src/assets/hamb-1.png"
           alt="Sua logo"
-          class="w-32 h-32 mb-5 rounded-full border-4 hover:scale-3d border-green-700 text-white text-center"
+          class="w-16 h-16 lg:w-32 lg:h-32 lg:mb-5 rounded-full border-3 hover:scale-110 border-green-700 text-white text-center"
         />
 
-        <h1 class="text-2xl font-bold text-white">Nome do Restaurante</h1>
-        <span id="endereco" class="font-medium text-white"
+        <h1 class="px-2 text-sm lg:text-2xl font-bold text-white">
+          Nome do Restaurante
+        </h1>
+
+        <span id="endereco" class="font-medium text-white hidden lg:inline"
           >Endereço do Restaurante</span
         >
 
-        <div class="mt-5" id="funcionamento-span">
+        <div class="lg:mt-5 hidden lg:inline" id="funcionamento-span">
           <span
             class="bg-green-700 px-4 py-1 rounded-2xl text-white font-medium"
             >Horário de Funcionamento</span
@@ -40,8 +43,988 @@
 
     <main
       id="menu"
-      class="grid xl:grid-cols-3 lg:grid-cols-2 mx-2 xl:mx-24 my-2 gap-10 grow auto-rows-min mb-10"
+      class="grid xl:grid-cols-3 lg:grid-cols-2 px-2 xl:px-24 pt-5 gap-10 grow auto-rows-min pb-10"
     >
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="flex">
+        <!--Imagem Item-->
+        <img
+          src="./src/assets/hamb-1.png"
+          alt="imagem-item"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
+        />
+
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
+          <p class="font-bold">Hamburguer Smash</p>
+
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
+          </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
+        </div>
+      </div>
       <div class="flex">
         <!--Imagem Item-->
         <img
@@ -240,6 +1223,19 @@
       </div>
     </main>
 
-    <footer class="flex w-full h-15 bg-red-400 sticky bottom-0"></footer>
+    <footer class="w-full flex h-15 bg-red-400 sticky bottom-0 items-center">
+      <div class="flex w-full justify-center items-center gap-1 text-white">
+        <div class="cursor-pointer">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="text-sm relative"
+            >Ver Pedido
+            <span
+              class="text-red-400 absolute text-xs bottom-2.5 bg-white rounded-full px-2 font-bold font-mono"
+              >110</span
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
