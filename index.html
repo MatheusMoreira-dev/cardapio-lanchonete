@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
     <title>Cardápio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="h-full">
-    <header class="w-full h-80 lg:sticky lg:top-0">
+  <body class="min-h-screen flex flex-col">
+    <header class="w-full h-80">
       <div
         class="w-full h-full flex flex-col justify-center items-center bg-banner"
       >
@@ -33,90 +40,206 @@
 
     <main
       id="menu"
-      class="grid lg:grid-cols-3 md:grid-cols-2 mx-2 lg:mx-32 my-2 gap-4"
+      class="grid xl:grid-cols-3 lg:grid-cols-2 mx-2 xl:mx-24 my-2 gap-10 grow auto-rows-min mb-10"
     >
-      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+      <div class="flex">
+        <!--Imagem Item-->
         <img
-          src=""
+          src="./src/assets/hamb-1.png"
           alt="imagem-item"
-          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
         />
 
-        <div class="flex flex-col">
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
           <p class="font-bold">Hamburguer Smash</p>
 
-          <span class="text-wrap">
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </span>
 
-          <div class="flex justify-between mt-3">
-            <p>R$ 12,00</p>
-            <i>Teste</i>
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
           </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
         </div>
       </div>
-      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+      <div class="flex">
+        <!--Imagem Item-->
         <img
-          src=""
+          src="./src/assets/hamb-1.png"
           alt="imagem-item"
-          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
         />
 
-        <div class="flex flex-col">
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
           <p class="font-bold">Hamburguer Smash</p>
 
-          <span class="text-wrap">
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </span>
 
-          <div class="flex justify-between mt-3">
-            <p>R$ 12,00</p>
-            <i>Teste</i>
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
           </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
         </div>
       </div>
-      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+      <div class="flex">
+        <!--Imagem Item-->
         <img
-          src=""
+          src="./src/assets/hamb-1.png"
           alt="imagem-item"
-          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
         />
 
-        <div class="flex flex-col">
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
           <p class="font-bold">Hamburguer Smash</p>
 
-          <span class="text-wrap">
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </span>
 
-          <div class="flex justify-between mt-3">
-            <p>R$ 12,00</p>
-            <i>Teste</i>
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
           </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
         </div>
       </div>
-      <div class="flex gap-4 bg-gray-400 rounded-2xl px-5 py-2 items-center">
+      <div class="flex">
+        <!--Imagem Item-->
         <img
-          src=""
+          src="./src/assets/hamb-1.png"
           alt="imagem-item"
-          class="w-24 h-24 lg:w-32 lg:h-32 aspect-square rounded-full border-2 border-amber-400"
+          class="w-20 h-20 md:w-30 md:h-30 rounded-2xl"
         />
 
-        <div class="flex flex-col">
+        <div class="px-2 flex grow flex-col">
+          <!--Nome Item-->
           <p class="font-bold">Hamburguer Smash</p>
 
-          <span class="text-wrap">
+          <!--Descrição Item-->
+          <span class="text-ellipsis text-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </span>
 
-          <div class="flex justify-between mt-3">
-            <p>R$ 12,00</p>
-            <i>Teste</i>
+          <div class="mt-4 flex justify-between items-center">
+            <p class="font-medium">R$ 12,00</p>
+
+            <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+            </button>
           </div>
+
+          <!--Preço e Btn Add Sacola-->
+          <!--<div class="flex justify-between mt-2">
+            <p class="font-bold">R$ 12,00</p>
+
+            <div class="quantidade-item flex gap-3 items-center">
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-red-400 rounded-full"
+              >
+                <i class="fa-solid fa-minus text-xs font-extralight"></i>
+              </button>
+
+              <span class="span-quantidade text-xl">0</span>
+
+              <button
+                class="flex items-center justify-center w-6 h-6 px-1 bg-gray-500 rounded-full"
+              >
+                <i class="fa-solid fa-plus text-xs font-extralight"></i>
+              </button>
+
+              <input type="number" class="hidden" />
+            </div>
+          </div>-->
         </div>
       </div>
     </main>
 
-    <footer class="flex w-full h-20 bg-red-400 sticky bottom-0"></footer>
+    <footer class="flex w-full h-15 bg-red-400 sticky bottom-0"></footer>
   </body>
 </html>
