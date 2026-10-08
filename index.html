@@ -42,13 +42,14 @@
 
     <main
       id="menu"
-      class="flex flex-col pl-5 pt-5 grow pb-10 max-w-7xl md:mx-auto mx-0"
+      class="w-full flex flex-col pl-5 pt-5 grow pb-10 max-w-7xl md:mx-auto mx-0 bg-zinc-100"
     >
       <!--Hámburguers-->
       <div class="mb-5">
         <h1 class="font-bold text-xl md:text-2xl mb-3">Hámburguers</h1>
 
-        <!--Tabs-->
+        <!--
+          Tabs
         <div class="tabs-categorias flex mb-3 gap-2 md:text-xs text-[10px]">
           <button
             class="rounded-full px-4 py-1 bg-amber-200 cursor-pointer border-2 border-amber-500"
@@ -71,235 +72,21 @@
             <i></i>
           </button>
         </div>
+        -->
 
         <!--Grade de Items-->
         <div
-          class="grid grid-flow-col grid-rows-3 auto-cols-[90%] sm:auto-cols-[70%] md:auto-cols-[55%] lg:auto-cols-[45%] gap-x-4 gap-y-6 overflow-x-auto"
-        >
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-1.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-2.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-3.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-4.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-5.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-6.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-7.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <!--Imagem Item-->
-            <img
-              src="./src/assets/hamb-8.png"
-              alt="imagem-item"
-              class="w-18 h-18 md:w-30 md:h-30 rounded-2xl"
-            />
-
-            <div class="px-2 flex grow flex-col">
-              <!--Nome Item-->
-              <p class="font-bold text-sm md:text-base">Hamburguer Smash</p>
-
-              <!--Descrição Item-->
-              <span class="text-ellipsis text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </span>
-
-              <!--Preço e Botão-->
-              <div class="mt-2 lg:mt-4 flex justify-between items-center">
-                <p class="font-medium">R$ 12,00</p>
-
-                <button class="bg-red-400 px-3 rounded">
-                  <i class="fa-solid fa-basket-shopping text-white"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+          id="menuHamburguers"
+          class="grid grid-flow-col grid-rows-3 auto-cols-[90%] md:auto-cols-[55%] lg:auto-cols-[45%] gap-2 md:gap-4 overflow-x-auto p-1"
+        ></div>
       </div>
 
       <!--Bebidas-->
       <div class="mb-5">
         <h1 class="font-bold text-xl md:text-2xl mb-3">Bebidas</h1>
 
-        <!--Tabs-->
+        <!--
+          Tabs
         <div class="tabs-categorias flex mb-3 gap-2 md:text-xs text-[10px]">
           <button
             class="rounded-full px-4 py-1 bg-amber-200 cursor-pointer border-2 border-amber-500"
@@ -322,7 +109,9 @@
             <i></i>
           </button>
         </div>
+        -->
 
+        <!--Grid de bebidas-->
         <div
           class="grid grid-flow-col grid-rows-2 auto-cols-[90%] sm:auto-cols-[70%] md:auto-cols-[55%] lg:auto-cols-[45%] gap-x-4 gap-y-6 overflow-x-auto"
         >
@@ -330,7 +119,7 @@
             <img
               src="./src/assets/refri-1.png"
               alt="imagem-item"
-              class="w-18 aspect-9/16 md:w-20 rounded-2xl object-cover"
+              class="w-18 h-18 md:w-24 md:h-24 rounded-xl object-center object-cover"
             />
 
             <div class="px-2 flex grow flex-col">
@@ -396,75 +185,184 @@
 
     <!--Modal do carrinho-->
     <div
-      class="w-full h-full fixed top-0 left-0 bg-black/50 z-99 flex justify-center items-center"
+      class="w-full h-full fixed top-0 left-0 bg-black/50 z-99 flex justify-center items-center hidden"
     >
+      <!--Modal-->
       <div
-        class="bg-white min-w-[90%] md:min-w-150 rounded-md p-4 shadow-xl/20 overflow-hidden"
+        class="bg-white min-w-[90%] md:min-w-150 max-h-[65%] rounded-md p-4 shadow-xl/20 flex flex-col"
       >
-        <!--Título-->
-        <h2
-          class="text-center text-xl font-bold pb-2 mb-3 border-b border-b-zinc-300"
-        >
-          Meu Carrinho
-        </h2>
+        <!--Header-->
+        <div class="flex w-full pb-2 mb-3 border-b border-b-zinc-300">
+          <!--Título-->
+          <h2 class="grow text-center text-xl font-bold self-center">
+            Meu Carrinho
+          </h2>
 
-        <!--Itens no Carrinho-->
-        <div
-          id="cart-items"
-          class="flex flex-col gap-1 justify-between grow px-2 py-0.5 h-40 overflow-y-auto mb-3"
-        >
-          <div class="flex w-full gap-3">
-            <span class="font-mono">10x</span>
-            <span class="grow">Hámburguer</span>
-            <span>R$ 300,00</span>
+          <button class="self-end">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!--Conteúdo do Modal-->
+        <div class="mb-2 grow overflow-y-auto px-1 flex flex-col">
+          <!--Itens no Carrinho-->
+          <div
+            id="cart-items"
+            class="bg-zinc-100 shrink-0 flex flex-col gap-1 justify-between p-2 overflow-y-auto rounded-t-md"
+          >
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
+            <div class="flex w-full gap-3">
+              <span class="font-mono">10x</span>
+              <span class="grow">Hámburguer</span>
+              <span>R$ 300,00</span>
+            </div>
           </div>
-        </div>
 
-        <!--Resumo do pedido-->
-        <div
-          class="border-t border-dashed border-zinc-700 bg-zinc-300 rounded-b-md p-3"
-        >
-          <p class="font-semibold text-zinc-500">
-            Total:
-            <span id="cart-total" class="text-black">R$ 300,00</span>
-          </p>
-        </div>
+          <!--Resumo do pedido-->
+          <div
+            class="border-t border-dashed border-zinc-700 bg-zinc-300 p-3 rounded-b-md"
+          >
+            <p class="font-semibold text-zinc-500">
+              Total:
+              <span id="cart-total" class="text-black">R$ 300,00</span>
+            </p>
+          </div>
 
-        <!--Endereço de Entrega-->
-        <div class="p-3">
-          <div>
-            <label for="cidade-entrega">Cidade</label>
+          <!--Endereço de Entrega-->
+          <div class="mt-2 grow">
+            <label for="cidade-entrega" class="text-xs">Cidade</label>
 
-            <select id="cidade-entrega" class="w-full">
+            <select
+              id="cidade-entrega"
+              class="w-full mb-3 px-3 py-1 border-0 outline rounded-sm outline-zinc-400 focus:outline-blue-300"
+              required
+            >
+              <option value="" disabled selected hidden>
+                Selecione a cidade...
+              </option>
               <option value="juazeiro">Juazeiro</option>
               <option value="crato">Crato</option>
               <option value="barbalha">Barbalha</option>
             </select>
-          </div>
 
-          <label for="address" class="text-xs">Endereço de Entrega</label>
-          <input
-            id="address"
-            type="text"
-            class="px-3 py-1 w-full border border-zinc-400 rounded-sm mb-5 focus:border-blue-400"
-          />
+            <label for="bairro-entrega" class="text-xs">Bairro</label>
+
+            <select
+              id="bairro-entrega"
+              class="w-full mb-3 px-3 py-1 border-0 outline rounded-sm outline-zinc-400 focus:outline-blue-300"
+              required
+            >
+              <option value="" disabled selected hidden>
+                Selecione o bairro...
+              </option>
+              <option value="juazeiro">Juazeiro</option>
+              <option value="crato">Crato</option>
+              <option value="barbalha">Barbalha</option>
+            </select>
+
+            <label for="address" class="text-xs">Endereço de Entrega</label>
+            <input
+              id="address"
+              type="text"
+              class="px-3 py-1 w-full border-0 outline outline-zinc-400 rounded-sm mb-5 focus:outline-blue-300"
+            />
+          </div>
         </div>
 
-        <!--Botões-->
-        <div class="flex w-full items-center gap-2">
-          <button
-            class="border border-red-400 text-red-500 px-4 py-1 rounded-md grow hover:bg-red-100 cursor-pointer active:bg-red-100"
-          >
-            Cancelar
-          </button>
+        <!--Footer-->
+        <div>
+          <!--Botões-->
+          <div class="flex w-full items-center gap-2">
+            <button
+              class="border border-red-400 text-red-500 px-4 py-1 rounded-md grow hover:bg-red-100 cursor-pointer active:bg-red-100"
+            >
+              Cancelar
+            </button>
 
-          <button
-            class="text-white font-medium bg-green-600 px-4 py-1 rounded-md grow hover:bg-green-700 cursor-pointer active:bg-green-700"
-          >
-            Finalizar
-          </button>
+            <button
+              class="text-white font-medium bg-green-600 px-4 py-1 rounded-md grow hover:bg-green-700 cursor-pointer active:bg-green-700"
+            >
+              Finalizar
+            </button>
+          </div>
         </div>
       </div>
     </div>
+
+    <script type="module" src="./src/app.js"></script>
   </body>
 </html>
