@@ -23,11 +23,11 @@ function hamburguerRender(hamburguer = { picture, name, description, price }) {
 
         <!--Preço e Botão-->
         <div class="mt-2 lg:mt-4 flex justify-between items-center">
-        <p class="font-medium">${formatter.format(hamburguer.price)}</p>
+          <p class="font-medium">${formatter.format(hamburguer.price)}</p>
 
-        <button class="bg-red-400 px-3 rounded">
-            <i class="fa-solid fa-basket-shopping text-white"></i>
-        </button>
+          <button class="bg-red-400 px-3 rounded">
+              <i class="fa-solid fa-basket-shopping text-white"></i>
+          </button>
         </div>
       </div>
     </div>`;
