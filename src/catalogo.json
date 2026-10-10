@@ -1,0 +1,65 @@
+{
+  "hamburguers": [
+    {
+      "picture": "./src/assets/hamb-1.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    },
+    {
+      "picture": "./src/assets/hamb-2.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    },
+    {
+      "picture": "./src/assets/hamb-3.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    },
+    {
+      "picture": "./src/assets/hamb-4.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    },
+    {
+      "picture": "./src/assets/hamb-5.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    },
+    {
+      "picture": "./src/assets/hamb-6.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    },
+    {
+      "picture": "./src/assets/hamb-7.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    },
+    {
+      "picture": "./src/assets/hamb-8.png",
+      "name": "Hámburguer Smash",
+      "description": "Pão Brioche, 2 blends de carne bovina, alface, tomate",
+      "price": 12
+    }
+  ],
+
+  "bebidas": [
+    {
+      "picture": "./src/assets/refri-1.png",
+      "name": "Coca-cola",
+      "price": 8
+    },
+    {
+      "picture": "./src/assets/refri-2.png",
+      "name": "Guaraná",
+      "price": 6.5
+    }
+  ]
+}
