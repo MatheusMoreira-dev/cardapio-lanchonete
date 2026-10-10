@@ -71,6 +71,7 @@
       class="w-full flex h-15 bg-red-400 sticky bottom-0 items-center justify-center z-50"
     >
       <button
+        id="openCartBtn"
         class="cursor-pointer text-white flex items-center justify-center gap-1"
       >
         <i class="fa-solid fa-basket-shopping"></i>
@@ -81,7 +82,8 @@
 
     <!--Modal do carrinho-->
     <div
-      class="w-full h-full fixed top-0 left-0 bg-black/50 z-99 flex justify-center items-center hidden"
+      id="cartModal"
+      class="w-full h-full fixed top-0 left-0 bg-black/50 z-99 hidden justify-center items-center"
     >
       <!--Modal-->
       <div
@@ -94,7 +96,7 @@
             Meu Carrinho
           </h2>
 
-          <button class="self-end">
+          <button id="closeCartBtn" class="self-end">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
