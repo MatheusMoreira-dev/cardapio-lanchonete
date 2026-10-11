@@ -72,7 +72,7 @@
     >
       <button
         id="openCartBtn"
-        class="cursor-pointer text-white flex items-center justify-center gap-1"
+        class="cursor-pointer text-white flex items-center justify-center gap-1 w-full"
       >
         <i class="fa-solid fa-basket-shopping"></i>
         <span class="text-sm">Ver Pedido</span>
@@ -87,7 +87,7 @@
     >
       <!--Modal-->
       <div
-        class="bg-white min-w-[90%] md:min-w-150 max-h-[65%] rounded-md p-4 shadow-xl/20 flex flex-col"
+        class="bg-white w-2xl max-h-9/12 lg:max-h-225 rounded-md p-4 shadow-xl/20 flex flex-col"
       >
         <!--Header-->
         <div class="flex w-full pb-2 mb-3 border-b border-b-zinc-300">
@@ -105,93 +105,13 @@
         <div class="mb-2 grow overflow-y-auto px-1 flex flex-col">
           <!--Itens no Carrinho-->
           <div
-            id="cart-items"
-            class="bg-zinc-100 shrink-0 flex flex-col gap-1 justify-between p-2 overflow-y-auto rounded-t-md"
-          >
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-            <div class="flex w-full gap-3">
-              <span class="font-mono">10x</span>
-              <span class="grow">Hámburguer</span>
-              <span>R$ 300,00</span>
-            </div>
-          </div>
+            id="cartItems"
+            class="bg-zinc-100 max-h-[50%] shrink-0 flex flex-col gap-1 justify-between p-2 overflow-y-auto rounded-t-md"
+          ></div>
 
           <!--Resumo do pedido-->
           <div
+            id="cartItemsTotal"
             class="border-t border-dashed border-zinc-700 bg-zinc-300 p-3 rounded-b-md"
           >
             <p class="font-semibold text-zinc-500">
